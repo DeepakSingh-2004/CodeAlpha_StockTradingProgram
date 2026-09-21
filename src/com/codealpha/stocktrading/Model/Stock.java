@@ -11,7 +11,7 @@ public class Stock {
     private final String name;      // e.g. "Tata Consultancy Services"
     private Double currentPrice;    // changes over time via market simulation
 
-    public Stock(String symbol, String name, Double curretPrice){
+    public Stock(String symbol, String name, Double currentPrice){
         this.symbol = symbol;
         this.name = name;
         this.currentPrice = currentPrice;
@@ -37,6 +37,7 @@ public class Stock {
             throw new IllegalArgumentException("Price must be positive. Got:"  +newPrice);
 
         }
+        this.currentPrice = newPrice;
 
      }
      @Override 

@@ -1,5 +1,5 @@
 package com.codealpha.stocktrading.Model;
 
-public class Portfolios {
+public class Portfolio {
     
 }
